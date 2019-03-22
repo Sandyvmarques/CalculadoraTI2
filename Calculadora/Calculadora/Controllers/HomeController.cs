@@ -22,7 +22,7 @@ namespace Calculadora.Controllers
 		[HttpPost]
 		//este visor traz o nr antigo 
 		//le da view o valor q esta na view, para aora seremos capazes de processar os dados 
-		public ActionResult Index(string visor)
+		public ActionResult Index(string visor , string btn)
 		{
 			return View();
 		}
