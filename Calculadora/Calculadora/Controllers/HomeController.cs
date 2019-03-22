@@ -24,6 +24,28 @@ namespace Calculadora.Controllers
 		//le da view o valor q esta na view, para aora seremos capazes de processar os dados 
 		public ActionResult Index(string visor , string btn)
 		{
+			switch (btn) {
+				case "0":
+				case "1":
+				case "2":
+				case "3":
+				case "4":
+				case "5":
+				case "6":
+				case "7":
+				case "8":
+				case "9":
+					if (visor == "0")
+					{
+						visor = btn;
+					}
+					else {
+						visor += btn;
+					}
+					break;
+
+			}
+			ViewBag.Resposta = visor;
 			return View();
 		}
 	}
